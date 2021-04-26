@@ -1,6 +1,7 @@
 from django.db import models
 from core.Producto.models import Producto
 from datetime import datetime
+from core.sexoLD import gender_choices
 # Create your models here.
 class Cliente(models.Model):
     producto=models.ForeignKey(Producto, on_delete=models.CASCADE)
